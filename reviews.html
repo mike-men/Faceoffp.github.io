@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FACE OFF</title>
+    <link rel="stylesheet" href="h.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="Face off (White).png" alt="Logo"></a>
+        </div>
+        <div class="navigation" id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="product.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+            </ul>
+        </div>
+         <!-- Cart Icon -->
+        <div class="cart-container">
+            <div class="cart-icon" id="cart-icon">
+                <i class='bx bx-cart'></i>
+                <span id="cart-count">0</span>
+            </div>
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown" id="cart-dropdown">
+                <ul id="cart-items">
+                    <!-- Items will be dynamically added here -->
+                </ul>
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cart-total">$0.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <i class='bx bx-menu' id="hamburger-icon"></i>
+        </div>
+    </nav>
+   
+    <main>
+        <section class="reviews">
+            <h1>Customer Reviews</h1>
+            <p>We value your feedback. Please leave your review below:</p>
+            <form action="/submit-review" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="review">Review:</label>
+                <textarea id="review" name="review" required></textarea>
+                
+                <label for="rating">Rating:</label>
+                <select id="rating" name="rating" required>
+                    <option value="5">5 Stars</option>
+                    <option value="4">4 Stars</option>
+                    <option value="3">3 Stars</option>
+                    <option value="2">2 Stars</option>
+                    <option value="1">1 Star</option>
+                </select>
+                
+                <button type="submit">Submit</button>
+            </form>
+            
+            
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-section" id="contact-us">
+            <h4>Contact Us</h4>
+            <p>Stonebwoy st.<br>Accra, Ghana</p>
+        </div>
+        <div class="footer-section" id="email">
+            <h4>Email</h4>
+            <p>mikemen20003@gmail.com</p>
+        </div>
+        <div class="footer-section" id="socials">
+            <h4>Follow Us</h4>
+            <ul>
+                <li><a href="#"><i class='bx bxl-snapchat' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-facebook-circle' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram-alt' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-twitter' ></i></a></li>
+            </ul>
+
+        </div>
+    </footer>
+    <marquee>Thank You For Choosing Us</marquee>
+    <!-- JavaScript for menu toggle and cart management -->
+    <script src="h.js"></script>
+</body>
+</html>
